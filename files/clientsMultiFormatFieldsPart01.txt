@@ -1,0 +1,10 @@
+0,João,Silva,32,joao@test.com
+1,t1c1,Cadeado,50.80
+1,t2c1,TV,1550.50
+0,Maria,Silva,30,maria@test.com
+1,t1c2,Mesa,2345.90
+1,t2c2,Sofá,1099.89
+1,t3c2,Geladeira,998.99
+0,José,Silva,20,jose@test.com
+1,t1c3,Ifood,126.54
+0,Client,Sem transação,20,semtransacao@test.com

@@ -11,20 +11,20 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
-public class ReadingFileFixedWidthStepConfig {
+public class ReadingFileDelimitedStepConfig {
     private final JobRepository jobRepository;
     private final PlatformTransactionManager transactionManager;
 
-    public ReadingFileFixedWidthStepConfig(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
+    public ReadingFileDelimitedStepConfig(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
         this.jobRepository = jobRepository;
         this.transactionManager = transactionManager;
     }
 
     @Bean
-    public Step readingFileFixedWidthStep(ItemReader<Client> readingFileFixedWidthReader, ItemWriter<Client> readingFileWriter){
-        return new StepBuilder("readFileFixedWidthStep", jobRepository)
-                .<Client, Client>chunk(1,transactionManager)
-                .reader(readingFileFixedWidthReader)
+    public Step readingFileDelimitedStep(ItemReader<Client> readingFileDelimitedReader, ItemWriter<Client> readingFileWriter) {
+        return new StepBuilder("readingFileDelimitedStep", jobRepository)
+                .<Client, Client>chunk(1, transactionManager)
+                .reader(readingFileDelimitedReader)
                 .writer(readingFileWriter)
                 .build();
     }

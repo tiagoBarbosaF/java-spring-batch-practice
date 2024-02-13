@@ -18,11 +18,19 @@ public class BatchConfig {
     }
 
     @Bean
-    public Job job(Step imprimeHelloStep, Step imprimeParImparStep, Step readingFileFixedWidthStep) {
-        return new JobBuilder("FirstJob!!", jobRepository)
+    public Job job(Step imprimeHelloStep,
+                   Step imprimeParImparStep,
+                   Step readingFileFixedWidthStep,
+                   Step readingFileDelimitedStep,
+                   Step readingFileMultiFormatsStep,
+                   Step readingMultipleFilesClientTransactionStep) {
+        return new JobBuilder("PrincipalJob", jobRepository)
                 .start(imprimeHelloStep)
                 .next(imprimeParImparStep)
                 .next(readingFileFixedWidthStep)
+                .next(readingFileDelimitedStep)
+                .next(readingFileMultiFormatsStep)
+                .next(readingMultipleFilesClientTransactionStep)
                 .incrementer(new RunIdIncrementer())
                 .build();
     }

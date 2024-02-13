@@ -6,10 +6,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ReadingFileFixedWidthWriterConfig {
+public class ReadingFileWriterConfig {
 
+    @SuppressWarnings({"rawtypes", "unchecked"})
     @Bean
-    public ItemWriter<Client> readingFileFixedWidthWriter() {
+    public ItemWriter readingFileWriter() {
         return item -> item.forEach(System.out::println);
     }
 }
