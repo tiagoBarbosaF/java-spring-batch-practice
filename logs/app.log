@@ -3760,3 +3760,1283 @@ Step: [readingMultipleFilesClientTransactionStep] executed in 121ms
 Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=22, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 701ms
 HikariPool-1 - Shutdown initiated...
 HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 27580 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e9f2c32
+HikariPool-1 - Start completed.
+Started SpringBatchTestsApplication in 1.527 seconds (process running for 2.18)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=23, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 34ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 55ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 92ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 88ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 64ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 149ms
+Executing step: [jdbcCursorStep]
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b41e1bf
+HikariPool-2 - Start completed.
+Step: [jdbcCursorStep] executed in 269ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=23, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s40ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 9096 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a0f2853
+HikariPool-1 - Start completed.
+Started SpringBatchTestsApplication in 1.265 seconds (process running for 1.81)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=24, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 35ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 48ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 86ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 76ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 62ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 154ms
+Executing step: [jdbcCursorStep]
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ed49a7f
+HikariPool-2 - Start completed.
+Step: [jdbcCursorStep] executed in 78ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=24, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 835ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 15196 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b1dc579
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35c4697c
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.342 seconds (process running for 1.866)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=25, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 35ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 44ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 84ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 76ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 63ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 155ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 133ms
+Executing step: [jdbcPagingStep]
+Step: [jdbcPagingStep] executed in 227ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=25, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s135ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 24864 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70c69586
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5820070c
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.321 seconds (process running for 1.849)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=26, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 32ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 50ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 85ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 72ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 66ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 128ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 127ms
+Executing step: [jdbcPagingStep]
+Step: [jdbcPagingStep] executed in 267ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=26, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s138ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 27772 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b0a1231
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d0cac30
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.294 seconds (process running for 1.889)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=27, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 36ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 56ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 84ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 85ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 68ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 116ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 138ms
+Executing step: [jdbcPagingStep]
+Step: [jdbcPagingStep] executed in 218ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=27, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s153ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 22548 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3976ebfa
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@460b50df
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.346 seconds (process running for 1.892)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=28, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 34ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 67ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 92ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 89ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 64ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 121ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 134ms
+Executing step: [jdbcPagingStep]
+Step: [jdbcPagingStep] executed in 271ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=28, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s222ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 28520 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77f905e3
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@314a31b0
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.318 seconds (process running for 1.852)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=29, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 31ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 55ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 83ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 85ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 65ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 118ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 150ms
+Executing step: [jdbcPagingStep]
+Step: [jdbcPagingStep] executed in 165ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=29, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s114ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 26276 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4694f434
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dfe23e8
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.318 seconds (process running for 1.852)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=30, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 35ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 59ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 94ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 74ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 67ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 151ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 137ms
+Executing step: [jdbcPagingStep]
+Step: [jdbcPagingStep] executed in 140ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=30, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s91ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 31488 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b0a1231
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@460b50df
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.344 seconds (process running for 1.869)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=31, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 39ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 47ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 83ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 100ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 87ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 106ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 213ms
+Executing step: [jdbcPagingStep]
+Step: [jdbcPagingStep] executed in 141ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=31, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s174ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 18412 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60dd0587
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35c4697c
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.355 seconds (process running for 1.882)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=32, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 35ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 49ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 83ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 77ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 60ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 135ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 216ms
+Executing step: [jdbcPagingStep]
+Reading page 0
+SQL used for reading first page: [SELECT * FROM client ORDER BY email ASC LIMIT 5]
+Reading page 1
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[ana3@email.com]
+Reading page 2
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[beatriz2@email.com]
+Reading page 3
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[bruno4@email.com]
+Reading page 4
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[carolina@email.com]
+Reading page 5
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[diego2@email.com]
+Reading page 6
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[fernanda3@email.com]
+Reading page 7
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[gustavo2@email.com]
+Reading page 8
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[joao3@email.com]
+Reading page 9
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[leonardo3@email.com]
+Reading page 10
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[marcos@email.com]
+Reading page 11
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[mariana4@email.com]
+Reading page 12
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[michele4@email.com]
+Reading page 13
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[rafael4@email.com]
+Reading page 14
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[sofia2@email.com]
+Reading page 15
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[thiago3@email.com]
+Reading page 16
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[vinicius4@email.com]
+Step: [jdbcPagingStep] executed in 156ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=32, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s125ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 23628 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f631ca0
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@468173fa
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.383 seconds (process running for 1.918)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=33, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 2s484ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 53ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 85ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 77ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 58ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 125ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 215ms
+Executing step: [jdbcPagingStep]
+Reading page 0
+SQL used for reading first page: [SELECT * FROM client ORDER BY email ASC LIMIT 2]
+Reading page 1
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[amanda3@email.com]
+Reading page 2
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[ana@email.com]
+Reading page 3
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[ana4@email.com]
+Reading page 4
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[andre@email.com]
+Reading page 5
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[beatriz2@email.com]
+Reading page 6
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[bruno@email.com]
+Reading page 7
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[bruno3@email.com]
+Reading page 8
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[camila@email.com]
+Reading page 9
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[camila4@email.com]
+Reading page 10
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[carolina@email.com]
+Reading page 11
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[daniel@email.com]
+Reading page 12
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[diego@email.com]
+Reading page 13
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[eduardo@email.com]
+Reading page 14
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[eduardo4@email.com]
+Reading page 15
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[fernanda3@email.com]
+Reading page 16
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[gabriela@email.com]
+Reading page 17
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[gabriela4@email.com]
+Reading page 18
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[helena2@email.com]
+Reading page 19
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[isabela4@email.com]
+Reading page 20
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[joao3@email.com]
+Reading page 21
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[julia2@email.com]
+Reading page 22
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[leonardo@email.com]
+Reading page 23
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[leonardo4@email.com]
+Reading page 24
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[luiza2@email.com]
+Reading page 25
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[marcos@email.com]
+Reading page 26
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[marcos4@email.com]
+Reading page 27
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[mariana3@email.com]
+Reading page 28
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[matheus2@email.com]
+Reading page 29
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[michele@email.com]
+Reading page 30
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[michele4@email.com]
+Reading page 31
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[pedro3@email.com]
+Reading page 32
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[rafael@email.com]
+Reading page 33
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[rafael5@email.com]
+Reading page 34
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[ricardo2@email.com]
+Reading page 35
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[sofia2@email.com]
+Reading page 36
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[sophia3@email.com]
+Reading page 37
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[thiago2@email.com]
+Reading page 38
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[victor2@email.com]
+Reading page 39
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[vinicius@email.com]
+Reading page 40
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+Using parameterList:[vinicius4@email.com]
+Step: [jdbcPagingStep] executed in 522ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=33, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 6s310ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 23244 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1697f2b3
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62765aec
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.304 seconds (process running for 1.828)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=34, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 34ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 51ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 86ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 77ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 61ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 127ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 236ms
+Executing step: [jdbcPagingStep]
+Reading page 0
+SQL used for reading first page: [SELECT * FROM client ORDER BY email ASC LIMIT 5]
+Reading page 1
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[ana3@email.com]
+Reading page 2
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[beatriz2@email.com]
+Reading page 3
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[bruno4@email.com]
+Reading page 4
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[carolina@email.com]
+Reading page 5
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[diego2@email.com]
+Reading page 6
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[fernanda3@email.com]
+Reading page 7
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[gustavo2@email.com]
+Reading page 8
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[joao3@email.com]
+Reading page 9
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[leonardo3@email.com]
+Reading page 10
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[marcos@email.com]
+Reading page 11
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[mariana4@email.com]
+Reading page 12
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[michele4@email.com]
+Reading page 13
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[rafael4@email.com]
+Reading page 14
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[sofia2@email.com]
+Reading page 15
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[thiago3@email.com]
+Reading page 16
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+Using parameterList:[vinicius4@email.com]
+Step: [jdbcPagingStep] executed in 492ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=34, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s505ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 13696 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b1dc579
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35c4697c
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.352 seconds (process running for 1.87)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=35, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 34ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 55ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 82ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 83ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 62ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 150ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 229ms
+Executing step: [jdbcPagingStep]
+Reading page 0
+SQL used for reading first page: [SELECT * FROM client ORDER BY email ASC LIMIT 10]
+Reading page 1
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[beatriz2@email.com]
+Reading page 2
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[carolina@email.com]
+Reading page 3
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[fernanda3@email.com]
+Reading page 4
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[joao3@email.com]
+Reading page 5
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[marcos@email.com]
+Reading page 6
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[michele4@email.com]
+Reading page 7
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[sofia2@email.com]
+Reading page 8
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[vinicius4@email.com]
+Step: [jdbcPagingStep] executed in 156ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=35, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s190ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 19676 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@421def93
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4207852d
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.36 seconds (process running for 1.902)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=36, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 35ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 53ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 90ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 82ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 64ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 168ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 211ms
+Executing step: [jdbcPagingStep]
+Reading page 0
+SQL used for reading first page: [SELECT * FROM client ORDER BY email ASC LIMIT 10]
+Reading page 1
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[beatriz2@email.com]
+Reading page 2
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[carolina@email.com]
+Reading page 3
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[fernanda3@email.com]
+Reading page 4
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[joao3@email.com]
+Reading page 5
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[marcos@email.com]
+Reading page 6
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[michele4@email.com]
+Reading page 7
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[sofia2@email.com]
+Reading page 8
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[vinicius4@email.com]
+Step: [jdbcPagingStep] executed in 135ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=36, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s163ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 30840 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f4b98f6
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9dada78
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.366 seconds (process running for 1.903)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=37, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 36ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 52ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 81ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 80ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 64ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 130ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 238ms
+Executing step: [jdbcPagingStep]
+Reading page 0
+SQL used for reading first page: [SELECT * FROM client ORDER BY email ASC LIMIT 10]
+Reading page 1
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[beatriz2@email.com]
+Reading page 2
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[carolina@email.com]
+Reading page 3
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[fernanda3@email.com]
+Reading page 4
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[joao3@email.com]
+Reading page 5
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[marcos@email.com]
+Reading page 6
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[michele4@email.com]
+Reading page 7
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[sofia2@email.com]
+Reading page 8
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[vinicius4@email.com]
+Step: [jdbcPagingStep] executed in 150ms
+Executing step: [skipExceptionStep]
+Step: [skipExceptionStep] executed in 209ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=37, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s407ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 30732 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@421def93
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4207852d
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.325 seconds (process running for 1.852)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=38, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 31ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 49ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 83ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 75ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 62ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 143ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 210ms
+Executing step: [jdbcPagingStep]
+Reading page 0
+SQL used for reading first page: [SELECT * FROM client ORDER BY email ASC LIMIT 10]
+Reading page 1
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[beatriz2@email.com]
+Reading page 2
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[carolina@email.com]
+Reading page 3
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[fernanda3@email.com]
+Reading page 4
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[joao3@email.com]
+Reading page 5
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[marcos@email.com]
+Reading page 6
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[michele4@email.com]
+Reading page 7
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[sofia2@email.com]
+Reading page 8
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[vinicius4@email.com]
+Step: [jdbcPagingStep] executed in 143ms
+Executing step: [skipExceptionStep]
+Encountered an error executing step skipExceptionStep in job PrincipalJob
+org.springframework.batch.core.step.skip.SkipLimitExceededException: Skip limit of '2' exceeded
+	at org.springframework.batch.core.step.skip.LimitCheckingItemSkipPolicy.shouldSkip(LimitCheckingItemSkipPolicy.java:125) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.skip.ExceptionClassifierSkipPolicy.shouldSkip(ExceptionClassifierSkipPolicy.java:65) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.shouldSkip(FaultTolerantChunkProvider.java:133) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:90) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.1.3.jar:6.1.3]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:210) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:194) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:174) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:169) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:164) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$4(SpringApplication.java:786) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:786) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774) ~[spring-boot-3.2.2.jar:3.2.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) [?:?]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774) [spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341) [spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-3.2.2.jar:3.2.2]
+	at com.tiagobarbosa.springbatchtests.SpringBatchTestsApplication.main(SpringBatchTestsApplication.java:10) [classes/:?]
+Caused by: org.springframework.jdbc.UncategorizedSQLException: Attempt to process next row failed; uncategorized SQLException for SQL [SELECT * FROM client]; SQL state [null]; error code [0]; Finishing execution - Invalid client leonardo3@email.com
+	at org.springframework.batch.item.database.AbstractCursorItemReader.translateSqlException(AbstractCursorItemReader.java:228) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.item.database.AbstractCursorItemReader.doRead(AbstractCursorItemReader.java:488) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:86) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	... 49 more
+Caused by: java.sql.SQLException: Finishing execution - Invalid client leonardo3@email.com
+	at com.tiagobarbosa.springbatchtests.readers.SkipExceptionReaderConfig$1.mapRow(SkipExceptionReaderConfig.java:34) ~[classes/:?]
+	at com.tiagobarbosa.springbatchtests.readers.SkipExceptionReaderConfig$1.mapRow(SkipExceptionReaderConfig.java:29) ~[classes/:?]
+	at org.springframework.batch.item.database.JdbcCursorItemReader.readCursor(JdbcCursorItemReader.java:141) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.item.database.AbstractCursorItemReader.doRead(AbstractCursorItemReader.java:483) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:86) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	... 49 more
+Step: [skipExceptionStep] executed in 124ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=38, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [FAILED] in 1s296ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 30396 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58c1da09
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9dada78
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.32 seconds (process running for 1.856)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=39, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 40ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 53ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 88ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 75ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 62ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 123ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 286ms
+Executing step: [jdbcPagingStep]
+Reading page 0
+SQL used for reading first page: [SELECT * FROM client ORDER BY email ASC LIMIT 10]
+Reading page 1
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[beatriz2@email.com]
+Reading page 2
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[carolina@email.com]
+Reading page 3
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[fernanda3@email.com]
+Reading page 4
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[joao3@email.com]
+Reading page 5
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[marcos@email.com]
+Reading page 6
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[michele4@email.com]
+Reading page 7
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[sofia2@email.com]
+Reading page 8
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[vinicius4@email.com]
+Step: [jdbcPagingStep] executed in 132ms
+Executing step: [skipExceptionStep]
+Encountered an error executing step skipExceptionStep in job PrincipalJob
+org.springframework.batch.core.step.skip.SkipLimitExceededException: Skip limit of '3' exceeded
+	at org.springframework.batch.core.step.skip.LimitCheckingItemSkipPolicy.shouldSkip(LimitCheckingItemSkipPolicy.java:125) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.skip.ExceptionClassifierSkipPolicy.shouldSkip(ExceptionClassifierSkipPolicy.java:65) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.shouldSkip(FaultTolerantChunkProvider.java:133) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:90) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.1.3.jar:6.1.3]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:210) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:194) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:174) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:169) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:164) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$4(SpringApplication.java:786) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:786) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774) ~[spring-boot-3.2.2.jar:3.2.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) [?:?]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774) [spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341) [spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-3.2.2.jar:3.2.2]
+	at com.tiagobarbosa.springbatchtests.SpringBatchTestsApplication.main(SpringBatchTestsApplication.java:10) [classes/:?]
+Caused by: org.springframework.jdbc.UncategorizedSQLException: Attempt to process next row failed; uncategorized SQLException for SQL [SELECT * FROM client]; SQL state [null]; error code [0]; Finishing execution - Invalid client joao4@email.com
+	at org.springframework.batch.item.database.AbstractCursorItemReader.translateSqlException(AbstractCursorItemReader.java:228) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.item.database.AbstractCursorItemReader.doRead(AbstractCursorItemReader.java:488) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:86) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	... 49 more
+Caused by: java.sql.SQLException: Finishing execution - Invalid client joao4@email.com
+	at com.tiagobarbosa.springbatchtests.readers.SkipExceptionReaderConfig$1.mapRow(SkipExceptionReaderConfig.java:34) ~[classes/:?]
+	at com.tiagobarbosa.springbatchtests.readers.SkipExceptionReaderConfig$1.mapRow(SkipExceptionReaderConfig.java:29) ~[classes/:?]
+	at org.springframework.batch.item.database.JdbcCursorItemReader.readCursor(JdbcCursorItemReader.java:141) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.item.database.AbstractCursorItemReader.doRead(AbstractCursorItemReader.java:483) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:86) ~[spring-batch-core-5.1.0.jar:5.1.0]
+	... 49 more
+Step: [skipExceptionStep] executed in 155ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=39, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [FAILED] in 1s393ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SpringBatchTestsApplication using Java 17.0.10 with PID 26424 (C:\Users\tiago\workspace\personal\spring-batch-tests\target\classes started by tiago in C:\Users\tiago\workspace\personal\spring-batch-tests)
+No active profile set, falling back to 1 default profile: "default"
+@Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+Bean 'dataSourceConfig' of type [com.tiagobarbosa.springbatchtests.config.DataSourceConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'springDataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionExecutionListeners' of type [org.springframework.boot.autoconfigure.transaction.ExecutionListenersTransactionManagerCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'transactionManager' of type [org.springframework.jdbc.support.JdbcTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b2954e1
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4207852d
+HikariPool-2 - Start completed.
+Started SpringBatchTestsApplication in 1.305 seconds (process running for 1.828)
+Job: [SimpleJob: [name=PrincipalJob]] launched with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=40, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}]
+Executing step: [FirstStep!!!]
+Step: [FirstStep!!!] executed in 36ms
+Executing step: [imprimeParImparStep]
+Step: [imprimeParImparStep] executed in 51ms
+Executing step: [readFileFixedWidthStep]
+Step: [readFileFixedWidthStep] executed in 82ms
+Executing step: [readingFileDelimitedStep]
+Step: [readingFileDelimitedStep] executed in 76ms
+Executing step: [readingFileMultiFormatsStep]
+Step: [readingFileMultiFormatsStep] executed in 62ms
+Executing step: [readingMultipleFilesClientTransactionStep]
+Step: [readingMultipleFilesClientTransactionStep] executed in 125ms
+Executing step: [jdbcCursorStep]
+Step: [jdbcCursorStep] executed in 211ms
+Executing step: [jdbcPagingStep]
+Reading page 0
+SQL used for reading first page: [SELECT * FROM client ORDER BY email ASC LIMIT 10]
+Reading page 1
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[beatriz2@email.com]
+Reading page 2
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[carolina@email.com]
+Reading page 3
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[fernanda3@email.com]
+Reading page 4
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[joao3@email.com]
+Reading page 5
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[marcos@email.com]
+Reading page 6
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[michele4@email.com]
+Reading page 7
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[sofia2@email.com]
+Reading page 8
+SQL used for reading remaining pages: [SELECT * FROM client WHERE ((email > ?)) ORDER BY email ASC LIMIT 10]
+Using parameterList:[vinicius4@email.com]
+Step: [jdbcPagingStep] executed in 144ms
+Executing step: [skipExceptionStep]
+Step: [skipExceptionStep] executed in 190ms
+Job: [SimpleJob: [name=PrincipalJob]] completed with the following parameters: [{'clientsMultiFormatFields':'{value=file:files/clientsMultiFormatFields.txt, type=class java.lang.String, identifying=true}','run.id':'{value=40, type=class java.lang.Long, identifying=true}','clientsFile':'{value=file:files/clients.txt, type=class java.lang.String, identifying=true}','multipleFilesClientTransaction':'{value=file:files/clientsMultiFormatFieldsPart*, type=class java.lang.String, identifying=true}','clientsDelimitedFields':'{value=file:files/clientsDelimitedFields.txt, type=class java.lang.String, identifying=true}'}] and the following status: [COMPLETED] in 1s327ms
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.

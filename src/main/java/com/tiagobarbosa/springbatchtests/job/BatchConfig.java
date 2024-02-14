@@ -23,7 +23,10 @@ public class BatchConfig {
                    Step readingFileFixedWidthStep,
                    Step readingFileDelimitedStep,
                    Step readingFileMultiFormatsStep,
-                   Step readingMultipleFilesClientTransactionStep) {
+                   Step readingMultipleFilesClientTransactionStep,
+                   Step jdbcCursorStep,
+                   Step jdbcPagingStep,
+                   Step skipExceptionStep) {
         return new JobBuilder("PrincipalJob", jobRepository)
                 .start(imprimeHelloStep)
                 .next(imprimeParImparStep)
@@ -31,6 +34,9 @@ public class BatchConfig {
                 .next(readingFileDelimitedStep)
                 .next(readingFileMultiFormatsStep)
                 .next(readingMultipleFilesClientTransactionStep)
+                .next(jdbcCursorStep)
+                .next(jdbcPagingStep)
+                .next(skipExceptionStep)
                 .incrementer(new RunIdIncrementer())
                 .build();
     }
