@@ -14,7 +14,8 @@ public class ReadingFileDelimitedReaderConfig {
 
     @StepScope
     @Bean
-    public FlatFileItemReader<Client> readingFileDelimitedReader(@Value("#{jobParameters['clientsDelimitedFields']}") Resource clientsDelimitedFields) {
+    public FlatFileItemReader<Client> readingFileDelimitedReader(
+            @Value("#{jobParameters['clientsDelimitedFields']}") Resource clientsDelimitedFields) {
         return new FlatFileItemReaderBuilder<Client>()
                 .name("readingFileDelimitedReader")
                 .resource(clientsDelimitedFields)

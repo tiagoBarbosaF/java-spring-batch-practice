@@ -1,15 +1,29 @@
 package com.tiagobarbosa.springbatchtests.domain;
 
-//public record Client(String name, String surname, int age, String email) {
-//}
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
+import org.hibernate.validator.constraints.Range;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Client {
+    @NotNull
+    @Size(min = 1, max = 100)
+    @Pattern(regexp = "^[a-zA-ZÀ-ÿ]+(?: [a-zA-ZÀ-ÿ]+)*$", message = "Name must be alphabetical")
     private String name;
+    @NotNull
+    @Size(min = 1, max = 100)
+    @Pattern(regexp = "^[a-zA-ZÀ-ÿ]+(?: [a-zA-ZÀ-ÿ]+)*$", message = "Name must be alphabetical")
     private String surname;
+    @NotNull
+    @Range(min = 18, max = 150)
     private int age;
+    @NotNull
+    @Size(min = 1, max = 50)
+    @Pattern(regexp = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+            message = "Invalid email")
     private String email;
     private List<Transaction> transactions = new ArrayList<>();
 
@@ -32,6 +46,10 @@ public class Client {
                 ", email='" + email + '\'' +
                 (transactions.isEmpty() ? "" : ", transactions: '" + transactions) + '\'' +
                 '}';
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public void setName(String name) {

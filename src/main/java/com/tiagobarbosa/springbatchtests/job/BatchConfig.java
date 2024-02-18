@@ -26,7 +26,10 @@ public class BatchConfig {
                    Step readingMultipleFilesClientTransactionStep,
                    Step jdbcCursorStep,
                    Step jdbcPagingStep,
-                   Step skipExceptionStep) {
+                   Step skipExceptionStep,
+                   Step validationProcessorStep,
+                   Step classifierProcessorStep
+    ) {
         return new JobBuilder("PrincipalJob", jobRepository)
                 .start(imprimeHelloStep)
                 .next(imprimeParImparStep)
@@ -37,6 +40,8 @@ public class BatchConfig {
                 .next(jdbcCursorStep)
                 .next(jdbcPagingStep)
                 .next(skipExceptionStep)
+                .next(validationProcessorStep)
+                .next(classifierProcessorStep)
                 .incrementer(new RunIdIncrementer())
                 .build();
     }

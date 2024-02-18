@@ -10,17 +10,17 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
 
 @Configuration
-public class ReadingFileMultiFormatsReaderConfig {
+public class ClassifierProcessorReaderConfig {
 
     @SuppressWarnings({"rawtypes", "unchecked"})
     @StepScope
     @Bean
-    public FlatFileItemReader readingFileMultiFormatsReader(
-            @Value("#{jobParameters['clientsMultiFormatFields']}") Resource clientsMultiFormatFields,
-            LineMapper lineMapper) {
+    public FlatFileItemReader classifierProcessorReader(
+            @Value("#{jobParameters['classifierProcessor']}")Resource classifierProcessor, LineMapper lineMapper
+            ){
         return new FlatFileItemReaderBuilder()
-                .name("readingFileMultiFormatsReader")
-                .resource(clientsMultiFormatFields)
+                .name("classifierProcessorReader")
+                .resource(classifierProcessor)
                 .lineMapper(lineMapper)
                 .build();
     }
